@@ -1,0 +1,45 @@
+---
+title: "Outline of my blog about TTC bus delays project"
+author: "Agam Sanghera"
+date: "2025-01-18"
+categories: [Outline]
+#format:
+#    pdf
+---
+
+
+
+## Introduction
+No one likes being late, especially when it is due to factors out of one’s control, but would it not be nice if those factors could be mitigated. Public transport delays are one of the leading factors causing delays, more specifically - Bus Delays. These delays are unavoidable and can affect the efficiency of services and may enhance operational decision-making and increase commuter satisfaction. In this study the factors which cause this delay, and how long the delay might be are identified.
+
+## Body 
+### Importance of data:
+  * Essential for drawing inferences
+  * Statistical models can identify risk factors by analyzing historical data
+  * Predictions about future are made from data from the past
+  * Collected from Toronto Open Source data: [here](https://open.toronto.ca/dataset/ttc-bus-delay-data/)
+  * Each data point represents a delay with details on route, date/time, location, incident type, and delay duration
+  
+### Analysis process and visualizations:
+  * Important to visually assess data to understand the problem. Load and preprocess data (handling missing values, converting timestamps, cleaning irrelevant fields). Analyze delay distribution, identify high-delay routes/locations, visualize incident type and day by delays.
+  * Delays are more frequent during peak commuting hours, particularly in the evenings and on weekdays, makes sense as
+    maximum traﬀic is present during the same times
+  * Primary contributor is mechanical issues probably due to lack of proper maintenance
+  * Operational issues are very infrequent, but present
+  * Make predictions using Statistical models such as Regression
+    + Model uses historical data from Tronto
+    + Predict type of delay (Short, Medium, or Long) at each bus stop 3) 
+  * Model used is logistic regression as it is good with categorical variables
+    + Use route, incident type, location, and time-based features as predictors. 
+    + Employ 5-fold cross-validation for hyperparameter tuning. 
+    + Utilize Python libraries: numpy, pandas, altair, scikit-learn.
+    
+### Results:
+  * Maximum delays are short and medium, and during peak commuting hours, and model is moderately accurate in predicting
+    those
+  * Maximum delays are during weekdays and due to mechanical issues 1
+  * Room for improvement in predictions on long delays, likely due to lesser data.
+  
+## Conclusion
+In conclusion, this report has provided an analysis which illustrates the primary factors contributing to delays and to accurately forecast the duration of these delays by utilizing route, incident types, location, and time-related features. It can be observed that the current results can be improved upon in the case for longer delays and should be focused upon to provide better results
+

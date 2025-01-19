@@ -1,0 +1,16 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/agam-sanghera-3005a521b/
+    - icon: github
+      text: Github
+      href: https://github.com/agamsanghera
+
+---
+
+This is Agam Sanghera's blog, I am a student at UBC Vancouver, enrolled in the Master of Data Science Course for the year 2024-25
